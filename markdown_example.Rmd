@@ -1,7 +1,7 @@
 ---
-title: "Markdown Example"
+title: "My First Markdown Text"
 author: "Andre Luiz B Rodrigues"
-date: "2023-02-28"
+date: "2/28/2023"
 output: pdf_document
 ---
 
@@ -28,3 +28,15 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+### My first attempt to make a graph  
+
+
+```{r echo = FALSE}
+matrix1 <- matrix(c(1,2,3,4,5,6,7,8), nrow=4, ncol=2)
+matrix2 <- matrix(c(8,7,6,5,4,3,2,1), nrow=2, ncol=4)
+matrix3 <- matrix1*as.vector(matrix2)
+
+plot(matrix1)
+```
+
